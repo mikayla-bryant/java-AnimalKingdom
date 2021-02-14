@@ -11,10 +11,11 @@ abstract class Animals
     abstract String reproduce();
     abstract String move();
     abstract String breathe();
+    abstract String filteredString();
 
     
     // default constructor
-    public Animal(String name, int year) 
+    public Animals(String name, int year) 
     {
         maxId++;
         id = maxId;
@@ -33,7 +34,8 @@ abstract class Animals
     int getYear() {
         return year;
     }
-
+    
+    // this will override what the ArrayList prints out for each element
     @Override
     public String toString(){
         return "id = " + id + " name = " + name + " year = " + year;

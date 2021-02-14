@@ -14,12 +14,12 @@ public class Mammals extends Animals
 
     @Override
     public String move() {
-        return "lungs";
+        return "walk";
     }
 
     @Override
     public String breathe() {
-        return "walk";
+        return "lungs";
     }
 
     @Override
