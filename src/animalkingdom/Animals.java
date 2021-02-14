@@ -8,9 +8,9 @@ abstract class Animals
     protected String name;
     protected int year;
 
+    abstract String reproduce();
     abstract String move();
     abstract String breathe();
-    abstract String reproduce();
 
     
     // default constructor
